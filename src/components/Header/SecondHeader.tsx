@@ -39,18 +39,18 @@ export default function SecondHeader() {
                 <CgMenuGridR size={24} className="text-gray-600 hover:text-gray-800 cursor-pointer" />
                 <span className="text-gray-400">&#8226;</span> {/* Bullet point */}
                 <div className="relative flex items-center">
-                    <button onClick={handleToggle} className="flex items-center justify-center bg-purple w-10 h-10 rounded-3xl hover:bg-purple-600">
+                    <button onClick={handleToggle} className="flex items-center justify-center bg-purple w-10 h-10 rounded-3xl hover:opacity-50">
                         <h1 className="text-white font-bold text-sm">UN</h1>
                     </button>
                     <h1 className="text-gray-600 font-semibold ml-2">Nome de usuário</h1>
                     {isMenuOpen && (
-                        <div className="absolute left-8 top-10 w-48 bg-dark border border-gray-200 rounded-lg shadow-lg">
+                        <div className="absolute left-8 top-10 w-48 bg-dark border rounded-lg">
                             <ul className="py-2">
-                                <li className={`px-4 py-2 cursor-pointer text-white ${selectedItem === 1 ? 'bg-purple-100 pl-2 border-l-4 border-purple' : 'hover:opacity-50'}`} onClick={() => handleSelectItem(1)}>Item 1</li>
-                                <li className={`px-4 py-2 cursor-pointer text-white ${selectedItem === 2 ? 'bg-purple-100 pl-2 border-l-4 border-purple' : 'hover:opacity-50'}`} onClick={() => handleSelectItem(2)}>Item 2</li>
-                                <li className={`px-4 py-2 cursor-pointer text-white ${selectedItem === 3 ? 'bg-purple-100 pl-2 border-l-4 border-purple' : 'hover:opacity-50'}`} onClick={() => handleSelectItem(3)}>Item 3</li>
-                                <li className={`px-4 py-2 cursor-pointer text-white ${selectedItem === 4 ? 'bg-purple-100 pl-2 border-l-4 border-purple' : 'hover:opacity-50'}`} onClick={() => handleSelectItem(4)}>Item 4</li>
-                                <li className={`px-4 py-2 cursor-pointer text-white ${selectedItem === 5 ? 'bg-purple-100 pl-2 border-l-4 border-purple' : 'hover:opacity-50'}`} onClick={() => handleSelectItem(5)}>Item 5</li>
+                                <li className={`px-4 py-2 cursor-pointer text-white ${selectedItem === 1 ? 'bg-purple-100 pl-2 border-l-4 border-purple' : 'hover:opacity-50'}`} onClick={() => handleSelectItem(1)}>Lista de amigos</li>
+                                <li className={`px-4 py-2 cursor-pointer text-white ${selectedItem === 2 ? 'bg-purple-100 pl-2 border-l-4 border-purple' : 'hover:opacity-50'}`} onClick={() => handleSelectItem(2)}>Artigos salvos</li>
+                                <li className={`px-4 py-2 cursor-pointer text-white ${selectedItem === 3 ? 'bg-purple-100 pl-2 border-l-4 border-purple' : 'hover:opacity-50'}`} onClick={() => handleSelectItem(3)}>Notificações</li>
+                                <li className={`px-4 py-2 cursor-pointer text-white ${selectedItem === 4 ? 'bg-purple-100 pl-2 border-l-4 border-purple' : 'hover:opacity-50'}`} onClick={() => handleSelectItem(4)}>Pre</li>
+                                <li className={`px-4 py-2 cursor-pointer text-white ${selectedItem === 5 ? 'bg-purple-100 pl-2 border-l-4 border-purple' : 'hover:opacity-50'}`} onClick={() => handleSelectItem(5)}>Fechar Sessão</li>
                             </ul>
                         </div>
                     )}
