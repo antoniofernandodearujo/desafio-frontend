@@ -56,35 +56,5 @@ yarn dev
 
 Abra seu navegador e vá para `http://localhost:3000` para ver o projeto em execução.
 
-### Resumo
-
-1. **Clone o repositório**:
-    ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
-    cd seu-repositorio
-    ```
-
-2. **Instale as dependências**:
-    - Com NPM:
-        ```bash
-        npm install
-        ```
-    - Com Yarn:
-        ```bash
-        yarn install
-        ```
-
-3. **Execute o projeto**:
-    - Com NPM:
-        ```bash
-        npm run dev
-        ```
-    - Com Yarn:
-        ```bash
-        yarn dev
-        ```
-
-4. **Acesse no navegador**:
-    - `http://localhost:3000`
 
 Seguindo esses passos, você conseguirá rodar o projeto Next.js com React.js na sua máquina local.
