@@ -16,7 +16,7 @@ Aqui está um guia passo a passo para configurar e executar o projeto com Next.j
 Primeiro, clone o repositório do projeto para o seu diretório local:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+https://github.com/antoniofernandodearujo/desafio-frontend
 cd seu-repositorio
 ```
 
@@ -56,5 +56,12 @@ yarn dev
 
 Abra seu navegador e vá para `http://localhost:3000` para ver o projeto em execução.
 
+### 5. Observações
+- Você deve rodar o backend antes, que se localiza aqui (), para que os dados sejam renderizados corretamente e as outras partes do código funcione como o esperado.
 
-Seguindo esses passos, você conseguirá rodar o projeto Next.js com React.js na sua máquina local.
+### 6. Rotas
+- http://localhost:3000 (index que está a tabela)
+- http://localhost:3000/usersnew/ (rota para criar um novo usuário)
+- http://localhost:3000/user/[username] (rota para ver as informações de um determinado usuário)
+
+Seguindo esses passos, você conseguirá rodar o projeto.
