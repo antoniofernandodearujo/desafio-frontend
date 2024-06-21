@@ -17,7 +17,7 @@ Primeiro, clone o repositório do projeto para o seu diretório local:
 
 ```bash
 https://github.com/antoniofernandodearujo/desafio-frontend
-cd seu-repositorio
+cd desafio-frontend
 ```
 
 ### 2. Instalar Dependências
@@ -36,7 +36,10 @@ npm install
 yarn install
 ```
 
-### 3. Executar o Projeto
+### 3. Observações
+- Você precisa rodar o backend antes, siga o passo a passo que se localiza aqui (https://github.com/antoniofernandodearujo/sensedia-candidate-challenge-backend), para que os dados sejam renderizados corretamente e as outras partes do código funcione como o esperado.
+
+### 4. Executar o Projeto
 
 Depois de instalar todas as dependências, você pode iniciar o servidor de desenvolvimento:
 
@@ -52,12 +55,9 @@ npm run dev
 yarn dev
 ```
 
-### 4. Acessar o Projeto
+### 5. Acessar o Projeto
 
 Abra seu navegador e vá para `http://localhost:3000` para ver o projeto em execução.
-
-### 5. Observações
-- Você deve rodar o backend antes, que se localiza aqui (), para que os dados sejam renderizados corretamente e as outras partes do código funcione como o esperado.
 
 ### 6. Rotas
 - http://localhost:3000 (index que está a tabela)
