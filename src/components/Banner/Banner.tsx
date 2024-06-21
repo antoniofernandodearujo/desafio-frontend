@@ -9,18 +9,21 @@ export default function Banner() {
                     alt="Type"
                     width={175}
                     height={52}
+                    loading="lazy"
                 />
                 <Image
                     src="/Level.png"
                     alt="Level"
                     width={191}
                     height={52}
+                    loading="lazy"
                 />
                 <Image
                     src="/Victories.png"
                     alt="Victories"
                     width={122}
                     height={52}
+                    loading="lazy"
                 />
             </div>
         </div>

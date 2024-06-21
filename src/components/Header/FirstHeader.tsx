@@ -9,6 +9,7 @@ export default function FirstHeader() {
           alt="Logo"
           width={140}
           height={39}
+          loading="lazy"
         />
       </div>
     </header>

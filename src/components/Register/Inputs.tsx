@@ -1,29 +1,26 @@
 import React from 'react';
+import { FieldError, UseFormRegisterReturn } from 'react-hook-form';
 
-interface InputProps {
-  label?: string;
-  placeholder?: string;
-  value: string;
-  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  required?: boolean;
-  error?: string;
+interface InputFieldProps {
+    type: string;
+    placeholder: string;
+    register: UseFormRegisterReturn;
+    error?: FieldError;
+    required?: boolean;
 }
 
-const Input: React.FC<InputProps> = ({ label, placeholder, value, onChange, required, error }) => {
-  return (
-    <div className="mb-4">
-      {label && <label className="block font-medium text-sm text-gray-700">{label}</label>}
-      <input
-        type="text"
-        placeholder={placeholder}
-        value={value}
-        onChange={onChange}
-        required={required}
-        className={`w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500 ${error ? 'border-red-500' : ''}`}
-      />
-      {error && <p className="mt-2 text-sm text-red-500">{error}</p>}
-    </div>
-  );
-};
+export default function InputField({ type, placeholder, register, error, required } : InputFieldProps) {
 
-export default Input;
+    return (
+        <div>
+            <input
+                type={type}
+                placeholder={placeholder}
+                {...register}
+                required={required}
+                className='w-full p-2 border-t-0 border-b-2 border-dark rounded-sm bg-gray-100 focus:outline-none mt-4'
+            />
+            {error && <p className="text-red-600">{error.message}</p>}
+        </div>
+    );
+}
